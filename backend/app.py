@@ -56,7 +56,7 @@ CATEGORIES = []
 TYPES_MAP = {} 
 
 try:
-    model = joblib.load('expense_categorization_model.pkl')
+    model = joblib.load('models/expense_categorization_model.pkl')
     vectorizer = joblib.load('vectorizer.pkl')
     CATEGORIES = list(model.classes_)
     print(f"Loaded Model Categories (from model.classes_): {CATEGORIES}")
